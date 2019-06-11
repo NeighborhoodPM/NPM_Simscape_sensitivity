@@ -1,8 +1,9 @@
-# NPM_Simscape
-Neighborhood phase margin method in Simscape.
+# NPM_Simscape_sensitivity
+This project is sensitivity analysis for the NPM method.
+NPM method stands for Neighborhood phase margin method.
 
 # Note that 
-This work has been merged into: https://github.com/Fractional-order-controller/FOFC_Benchmark
+NPM method has been merged into: https://github.com/Fractional-order-controller/FOFC_Benchmark
 
 # Citation
 Bo Shang, Chengdong Wu, YangQuan Chen. Neighborhood optimization method for shaping Bode plot with larger phase margin [C]. The 2019 Symposium on Small Unmanned Aerial Vehicle Technologies and Applications (SUAVTA), 2019 (accepted).
