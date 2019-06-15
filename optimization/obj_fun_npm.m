@@ -23,15 +23,16 @@ global wc phi_m
 
 %% Step two: Calculate area phase margin to build the objective function
 w=wc;
+delta = 1.25;
 APM1 = atan2(kd*w^lambda*sin(pi*lambda/2),(1+kd*w^lambda*cos(pi*lambda/2)))...
     +atan2(1,T1*w);
-w=wc*5;
+w=wc*delta;
 APM2 = atan2(kd*w^lambda*sin(pi*lambda/2),(1+kd*w^lambda*cos(pi*lambda/2)))...
     +atan2(1,T1*w);
-w=wc/5;
+w=wc/delta;
 APM3 = atan2(kd*w^lambda*sin(pi*lambda/2),(1+kd*w^lambda*cos(pi*lambda/2)))...
     +atan2(1,T1*w);
-sigma = 8;
+sigma = 2;
 APM = 2*abs(phi_m-APM1/pi*180)+abs(phi_m+sigma-APM2/pi*180)+abs(phi_m-sigma-APM3/pi*180);
 %APM = 2*abs(phi_m-APM1/pi*180)-APM2/pi*180-APM3/pi*180;
 % to get the min value max, so we use a negative symbol.
